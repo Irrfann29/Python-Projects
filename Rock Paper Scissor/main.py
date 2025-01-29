@@ -1,19 +1,22 @@
 import random
 
+
 choices = ["rock", "paper", "scissors"]
 
-user = input("Enter rock, paper, or scissors: ").lower()
+while True:
 
-random = random.choice(choices)
+    user = input("Enter rock, paper, or scissors: ").lower()
 
-print(f"You chose: {user}")
-print(f"Computer chose: {random}")
+    computer = random.choice(choices)
 
-if user == random:
-    print("It's a tie!")
-elif (user == "rock" and random == "scissors") or \
-     (user == "scissors" and random == "paper") or \
-     (user == "paper" and random == "rock"):
-    print("You win!")
-else:
-    print("You lose!")
+    print(f"You chose: {user}")
+    print(f"Computer chose: {computer}")
+
+    if user == computer:
+        print("It's a tie!")
+    elif (user == "rock" and computer == "scissors") or \
+        (user == "scissors" and computer == "paper") or \
+        (user == "paper" and computer == "rock"):
+        print("You win!")
+    else:
+        print("You lose!")
