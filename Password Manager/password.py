@@ -1,4 +1,13 @@
 
+def view ():
+    pass
+def add ():
+    pass
+def remove ():
+    pass
+def update ():
+    pass
+
 while True:
     password = input("Enter Your Options (View / Add / Remove / Update) Or Press Q to quit :").lower()
     if password == "Q":
